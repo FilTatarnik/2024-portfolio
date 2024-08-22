@@ -14,13 +14,13 @@ const Footer = () => {
           <a href="/terms-of-service" className="text-blue-400 hover:text-blue-300 mx-2 transition-colors">Terms of Service</a>
         </div>
         <div className="w-1/4 text-right">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 mx-2 transition-colors">
+          <a href="https://github.com/FilTatarnik" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 mx-2 transition-colors">
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 mx-2 transition-colors">
+          <a href="https://www.linkedin.com/in/filiptatarnik/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 mx-2 transition-colors">
             <FontAwesomeIcon icon={faLinkedin} size="lg" />
           </a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 mx-2 transition-colors">
+          <a href="https://x.com/FilDamn" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 mx-2 transition-colors">
             <FontAwesomeIcon icon={faTwitter} size="lg" />
           </a>
         </div>
