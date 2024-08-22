@@ -1,21 +1,10 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +13,139 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  margin-left: 250px; /* Adjust based on your navbar width */
+  width: calc(100% - 250px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  min-height: 100vh;
+  padding: 20px;
 }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  overflow: hidden;
+  width: 12.5%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #fff;
+  color: black;
+  font-size: 1.125rem;
+  z-index: 2;
+}
+.NavName { 
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav h1 {
+  padding-left: 2rem;
+  flex-shrink: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  flex-grow: 1;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-right: 5%;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 2rem;
+  overflow: hidden;
+  padding-left: 2.5%;
+}
+
+.navbar-toggler {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 2rem;
+}
+
+.navbar-toggler span {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+@media (max-width: 768px) { 
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    z-index: 3;
+  }
+
+  .navbar ul.open {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin: 1rem 0;
+    padding-left: 2rem;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+  }
+
+  .navbar-toggler.active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggler.active span:nth-child(3) {
+    transform: rotate(-45deg); 
+  }
+ }
