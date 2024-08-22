@@ -26,7 +26,7 @@ const Projects = () => {
         </div>
         <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <h3 className="text-2xl font-bold mb-4 text-blue-400">Charm</h3>
-          <p className="text-gray-300 mb-4">Charm is a full-stack web app built with ReactJS, NodeJS, ExpressJS, and PostgreSQL. It lets users create profiles and discover matches nearby. Currently a work in progress.</p>
+          <p className="text-gray-300 mb-4">Charm is a full-stack web app built with ReactJS, NodeJS, ExpressJS, and PostgreSQL. It lets users create profiles and discover matches nearby. Currently a work in progress.npm</p>
           <button onClick={openModal} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             View Project Details
           </button>
