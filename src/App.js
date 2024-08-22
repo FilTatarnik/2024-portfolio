@@ -1,3 +1,5 @@
+// App.js
+import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
@@ -7,17 +9,14 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar />
+    <div className="App bg-gray-100">
+      <Navbar />
+      <main className="lg:ml-64">
         <LandingPage />
-        <Hero />
         <AboutUs />
-
-
-
-        <Footer />
-      </header>
+        <Hero />
+      </main>
+      <Footer />
     </div>
   );
 }

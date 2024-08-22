@@ -1,13 +1,19 @@
+// LandingPage.js
 import React from 'react';
+import { Link } from 'react-scroll';
 
-const LandingPage = () => {
-  return (
-    <section className="landing-page">
-      <h1>Filip Tatarnik</h1>
-      <p>Web Developer & Designer</p>
-      {/* Add any other content you want on your landing page */}
-    </section>
-  );
-};
+const LandingPage = () => (
+  <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-blue-700 text-white p-8">
+    <div className="text-center">
+      <h1 className="text-5xl font-bold mb-4 animate-fade-in-down">Filip Tatarnik</h1>
+      <p className="text-2xl mb-8 animate-fade-in-up">Crafting Digital Experiences</p>
+      <Link to="projects" smooth={true} duration={500}>
+        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 animate-bounce">
+          View My Work
+        </button>
+      </Link>
+    </div>
+  </section>
+);
 
 export default LandingPage;
