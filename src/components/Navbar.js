@@ -13,7 +13,11 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       </button>
       <nav className={`fixed left-0 top-0 h-full w-64 bg-white shadow-lg flex flex-col justify-between p-6 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 z-40`}>
         <div>
-          <h1 className="text-2xl md:text-3xl font-bold mb-2 text-blue-600">Filip Tatarnik</h1>
+          <h1 className="text-2xl md:text-3xl font-bold mb-2 text-blue-600">
+          <Link to="home" smooth={true} duration={500} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+            Filip Tatarnik
+            </Link>
+          </h1>
           <p className="text-xs md:text-sm text-gray-600 mb-8 md:mb-12">Web Developer & Designer</p>
           <ul className="space-y-6 md:space-y-12">
             <li>

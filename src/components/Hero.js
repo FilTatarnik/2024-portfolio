@@ -32,8 +32,8 @@ const Projects = () => {
           </button>
         </div>
         <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-2xl font-bold mb-4 text-blue-400">Project 2</h3>
-          <p className="text-gray-300 mb-4">Description of Project 2...</p>
+          <h3 className="text-2xl font-bold mb-4 text-blue-400">LeashPals</h3>
+          <p className="text-gray-300 mb-4">LeashPals is a web app built with React.js, Node.js, Express.js, and PostgreSQL. Users can register as either a Dog Owner or a Walker. Owners can add dogs and schedule walks, while Walkers can accept and complete these walk requests. The app simplifies connecting Owners with reliable Walkers.</p>
           <button onClick={openModal} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             View Project Details
           </button>

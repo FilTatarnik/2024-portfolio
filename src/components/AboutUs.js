@@ -2,7 +2,7 @@
 import React from 'react';
 
 const AboutUs = () => (
-  <section id="about" className="min-h-screen flex flex-col justify-center bg-gray-100 p-12">
+  <section id="about" className="min-h-screen flex flex-col justify-center bg-blue-100 p-12">
     <h2 className="text-4xl font-bold mb-12 text-center text-blue-800">About Me</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -26,6 +26,11 @@ const AboutUs = () => (
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Education</h3>
         <p className="text-gray-700">Finished General Assembly Chicago Full Stack Developer Bootcamp</p>
+      </div>
+      <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <h3 className="text-2xl font-bold mb-4 text-blue-700">More</h3>
+        <p className="text-gray-700">I was born in Poland and came to America when I was two.</p>
+        <p className="text-gray-700">I have a Cat that came into my life in 2010 named Machievelli.</p>
       </div>
     </div>
   </section>
