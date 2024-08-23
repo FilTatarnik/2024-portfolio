@@ -11,6 +11,11 @@ const LandingPage = () => (
           View My Work
         </button>
       </Link>
+      <Link to="about" smooth={true} duration={500} className='px-2'>
+        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 animate-bounce">
+          About Me
+        </button>
+      </Link>
     </div>
   </section>
 );
