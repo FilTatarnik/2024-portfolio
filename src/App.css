@@ -1,7 +1,9 @@
 .App {
-  text-align: center;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -14,8 +16,8 @@
 }
 
 main {
-  margin-left: 250px; /* Adjust based on your navbar width */
-  width: calc(100% - 250px);
+  flex-grow: 1;
+  width: 100%;
 }
 
 section {

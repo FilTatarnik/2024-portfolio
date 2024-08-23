@@ -1,5 +1,4 @@
-// App.js
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
@@ -8,14 +7,18 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 
 function App() {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
   return (
-    <div className="App bg-gray-100">
-      <Navbar />
-      <main className="lg:ml-64">
-        <LandingPage />
-        <AboutUs />
-        <Hero />
-      </main>
+    <div className="App flex flex-col min-h-screen">
+      <div className="flex flex-grow relative">
+        <Navbar isOpen={isNavbarOpen} setIsOpen={setIsNavbarOpen} />
+        <main className={`flex-grow transition-all duration-300 ${isNavbarOpen ? 'md:ml-64' : 'ml-0'}`}>
+          <LandingPage />
+          <AboutUs />
+          <Hero />
+        </main>
+      </div>
       <Footer />
     </div>
   );
