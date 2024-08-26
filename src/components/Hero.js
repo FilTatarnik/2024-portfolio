@@ -7,16 +7,17 @@ const Projects = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <section id="projects" className="min-h-screen flex flex-col justify-center bg-gray-900 p-12">
-      <h2 className="text-4xl font-bold mb-12 text-center text-white">My Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-2xl font-bold mb-4 text-blue-400">Munchy</h3>
-          <p className="text-gray-300 mb-4">Munchy is a playful web app that helps users build healthier eating habits through gamification. Built with ReactJS, it features an engaging interface for tracking progress and connecting with a supportive community, making healthier living enjoyable and sustainable.</p>
-          <button onClick={openModal} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            View Project Details
-          </button>
-        </div>
+    <section id="projects" className="min-h-screen flex flex-col justify-center bg-gray-900 p-4 sm:p-6 md:p-8 lg:p-12 md:left-64">
+      <div className="flex flex-col items-center w-full max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold mb-12 text-center text-white">My Projects</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 className="text-2xl font-bold mb-4 text-blue-400">Munchy</h3>
+            <p className="text-gray-300 mb-4">Munchy is a playful web app that helps users build healthier eating habits through gamification. Built with ReactJS, it features an engaging interface for tracking progress and connecting with a supportive community, making healthier living enjoyable and sustainable.</p>
+            <button onClick={openModal} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              View Project Details
+            </button>
+          </div>
         <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <h3 className="text-2xl font-bold mb-4 text-blue-400">PokeDex Reloaded</h3>
           <p className="text-gray-300 mb-4">PokeDex Reloaded is a web app that lets users quickly find any Pokémon's color palette with a simple search. Built with ReactJS and NodeJS, it offers an intuitive and efficient way to explore Pokémon colors.</p>
@@ -65,6 +66,7 @@ const Projects = () => {
           </div>
         </div>
       )}
+      </div>
     </section>
   );
 };

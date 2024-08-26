@@ -2,7 +2,7 @@
 import React from 'react';
 
 const AboutUs = () => (
-  <section id="about" className="min-h-screen flex flex-col justify-center bg-blue-100 p-12">
+  <section id="about" className="min-h-screen flex flex-col justify-center bg-blue-100 p-12 md:left-64">
     <h2 className="text-4xl font-bold mb-12 text-center text-blue-800">About Me</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">

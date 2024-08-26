@@ -10,10 +10,10 @@ function App() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   return (
-    <div className="App flex flex-col min-h-screen">
-      <div className="flex flex-grow relative">
-        <Navbar isOpen={isNavbarOpen} setIsOpen={setIsNavbarOpen} />
-        <main className={`flex-grow transition-all duration-300 ${isNavbarOpen ? 'md:ml-64' : 'ml-0'}`}>
+    <div className="flex flex-col min-h-screen">
+      <Navbar isOpen={isNavbarOpen} setIsOpen={setIsNavbarOpen} />
+      <div className="flex-grow pl-0 md:pl-64"> {/* Main content wrapper */}
+        <main className="flex-grow">
           <LandingPage />
           <AboutUs />
           <Hero />
