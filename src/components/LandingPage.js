@@ -6,16 +6,18 @@ const LandingPage = () => (
     <div className="text-center">
       <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-down">Filip Tatarnik</h1>
       <p className="text-xl md:text-2xl mb-8 animate-fade-in-up">Crafting Digital Experiences</p>
-      <Link to="projects" smooth={true} duration={500}>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 animate-bounce">
-          View My Work
-        </button>
-      </Link>
-      <Link to="about" smooth={true} duration={500} className='px-2npm '>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 animate-bounce">
-          About Me
-        </button>
-      </Link>
+      <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
+  <Link to="projects" smooth={true} duration={500}>
+    <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 transform hover:scale-105">
+      View My Work
+    </button>
+  </Link>
+  <Link to="about" smooth={true} duration={500}>
+    <button className="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-full transition-colors duration-300 border-2 border-blue-600 transform hover:scale-105">
+      About Me
+    </button>
+  </Link>
+</div>
     </div>
   </section>
 );

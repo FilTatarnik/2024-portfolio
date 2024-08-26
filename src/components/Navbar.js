@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { Home, User, Briefcase, Mail, Menu, X } from 'lucide-react';
+import ContactFormModal from './ContactFormModal';  // Import the new component
 
 const Navbar = ({ isOpen, setIsOpen }) => {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
+  const toggleContactModal = () => {
+    setIsContactModalOpen(!isContactModalOpen);
+  };
+
   return (
     <>
       <button 
@@ -14,8 +21,8 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       <nav className={`fixed left-0 top-0 h-full w-64 bg-white shadow-lg flex flex-col justify-between p-6 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 z-40`}>
         <div>
           <h1 className="text-2xl md:text-3xl font-bold mb-2 text-blue-600">
-          <Link to="home" smooth={true} duration={500} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
-            Filip Tatarnik
+            <Link to="home" smooth={true} duration={500} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+              Filip Tatarnik
             </Link>
           </h1>
           <p className="text-xs md:text-sm text-gray-600 mb-8 md:mb-12">Web Developer & Designer</p>
@@ -36,14 +43,15 @@ const Navbar = ({ isOpen, setIsOpen }) => {
               </Link>
             </li>
             <li>
-              <Link to="contact" smooth={true} duration={500} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+              <button onClick={toggleContactModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <Mail size={20} className="mr-2" />Contact
-              </Link>
+              </button>
             </li>
           </ul>
         </div>
         <div className="text-sm text-gray-500">FT</div>
       </nav>
+      <ContactFormModal isOpen={isContactModalOpen} onClose={toggleContactModal} />
     </>
   );
 };
