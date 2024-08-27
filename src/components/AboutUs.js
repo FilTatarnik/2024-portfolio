@@ -29,8 +29,8 @@ const AboutUs = () => (
       </div>
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">More</h3>
-        <p className="text-gray-700">I was born in Poland and came to America when I was two.</p>
-        <p className="text-gray-700">I have a Cat that came into my life in 2010 named Machievelli.</p>
+        <p className="text-gray-700"></p>
+        <p className="text-gray-700"></p>
       </div>
     </div>
   </section>
