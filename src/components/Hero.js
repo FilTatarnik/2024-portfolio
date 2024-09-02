@@ -56,7 +56,7 @@ const Projects = () => {
       </div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4  md:left-64">
           <div className="bg-gray-800 p-8 rounded-lg max-w-2xl w-full">
             <h2 className="text-2xl font-bold mb-4 text-white">Project Details</h2>
             <p className="text-gray-300">Gotta make each project have a unique modal. Do later</p>
