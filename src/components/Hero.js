@@ -26,8 +26,8 @@ const Projects = () => {
       id: 2,
       title: 'PokeDex Reloaded',
       description: 'PokeDex Reloaded is a web app that lets users quickly find any Pokémon\'s color palette with a simple search. Built with ReactJS and NodeJS, it offers an intuitive and efficient way to explore Pokémon colors.',
-      url: 'https://github.com/FilTatarnik/PokeDex_Reloaded',
-      githubUrl: 'https://filtatarnik.github.io/PokeDex_Reloaded/',
+      url: 'https://filtatarnik.github.io/PokeDex_Reloaded/',
+      githubUrl: 'https://github.com/FilTatarnik/PokeDex_Reloaded',
     },
     {
       id: 3,
