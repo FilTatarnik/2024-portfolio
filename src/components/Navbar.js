@@ -6,13 +6,14 @@ import OsrsStats from './OsrsStats';
 
 const Navbar = ({ isOpen, setIsOpen }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [isOsrsModalOpen, setIsOsrsModalOpen] = useState(false);
 
   const toggleContactModal = () => {
     setIsContactModalOpen(!isContactModalOpen);
   };
 
   const toggleOsrsModal = () => {
-
+    setIsOsrsModalOpen(!isOsrsModalOpen);
   };
 
   return (
@@ -70,6 +71,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
         <div className="text-sm text-gray-500">FT</div>
       </nav>
       <ContactFormModal isOpen={isContactModalOpen} onClose={toggleContactModal} />
+      <OsrsStats isOpen={isOsrsModalOpen} onClose={toggleOsrsModal} />
     </>
   );
 };
