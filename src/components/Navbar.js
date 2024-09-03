@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { Home, User, Briefcase, Mail, Menu, X } from 'lucide-react';
+import { Home, User, Briefcase, Mail, Menu, X, ChartColumnIncreasing, Cat, Minus } from 'lucide-react';
 import ContactFormModal from './ContactFormModal';  // Import the new component
+import OsrsStats from './OsrsStats';
 
 const Navbar = ({ isOpen, setIsOpen }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const toggleContactModal = () => {
     setIsContactModalOpen(!isContactModalOpen);
+  };
+
+  const toggleOsrsModal = () => {
+
   };
 
   return (
@@ -45,6 +50,19 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             <li>
               <button onClick={toggleContactModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <Mail size={20} className="mr-2" />Contact
+              </button>
+            </li>
+            <li>
+              <Minus />
+            </li>
+            <li>
+              <button onClick={toggleOsrsModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+                <ChartColumnIncreasing size={20} className="mr-2" />Osrs Stats
+              </button>
+            </li>
+            <li>
+              <button onClick={toggleOsrsModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+                <Cat size={20} className="mr-2" />Pokemon Cards
               </button>
             </li>
           </ul>

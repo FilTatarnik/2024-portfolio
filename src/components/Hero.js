@@ -36,10 +36,10 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Munchy',
-      description: 'Munchy is a playful web app that helps users build healthier eating habits through gamification. Built with ReactJS, it features an engaging interface for tracking progress and connecting with a supportive community, making healthier living enjoyable and sustainable.',
-      url: 'https://filtatarnik.github.io/Munchy_healthy_eating_app/',
-      githubUrl: 'https://github.com/FilTatarnik/Munchy_healthy_eating_app',
+      title: 'LeashPals',
+      description: 'LeashPals is a web app built with React.js, Node.js, Express.js, and PostgreSQL. Users can register as either a Dog Owner or a Walker. Owners can add dogs and schedule walks, while Walkers can accept and complete these walk requests. The app simplifies connecting Owners with reliable Walkers. Currently a work in progress.',
+      url: '',
+      githubUrl: 'https://github.com/FilTatarnik/Leashpals_back_nodejs',
     },
     {
       id: 2,
@@ -57,15 +57,15 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: 'LeashPals',
-      description: 'LeashPals is a web app built with React.js, Node.js, Express.js, and PostgreSQL. Users can register as either a Dog Owner or a Walker. Owners can add dogs and schedule walks, while Walkers can accept and complete these walk requests. The app simplifies connecting Owners with reliable Walkers.',
-      url: '',
-      githubUrl: 'https://github.com/FilTatarnik/Leashpals_back_nodejs',
+      title: 'Munchy',
+      description: `Munchy is a fun and interactive website that helps you stay healthy with useful tips and a supportive community. Built with ReactJS, it makes it easy to find health advice, set wellness goals, and connect with others who share your interests. It's all about making healthy living enjoyable and achievable. *still adjusting mobile responsiveness*`,
+      url: 'https://filtatarnik.github.io/Munchy_healthy_eating_app/',
+      githubUrl: 'https://github.com/FilTatarnik/Munchy_healthy_eating_app',
     },
     {
       id: 5,
       title: 'Window Wiz Installation',
-      description: `Window Wiz Installation is a mock website for a window installation company, built with React. It highlights services, customer testimonials, and a contact form, simulating a real business's online presence.`,
+      description: `Window Wiz Installation is a mock website for a window installation company, built with React. It highlights services, customer testimonials, and a contact form, simulating a real business's online presence. `,
       url: 'https://filtatarnik.github.io/WindowWizInstallation/',
       githubUrl: 'https://github.com/FilTatarnik/WindowWizInstallation',
     },
