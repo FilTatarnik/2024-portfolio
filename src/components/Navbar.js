@@ -7,6 +7,7 @@ import OsrsStats from './OsrsStats';
 const Navbar = ({ isOpen, setIsOpen }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isOsrsModalOpen, setIsOsrsModalOpen] = useState(false);
+  const [isPokemonModalOpen, setIsPokemonModalOpen] = useState(false);
 
   const toggleContactModal = () => {
     setIsContactModalOpen(!isContactModalOpen);
@@ -14,6 +15,10 @@ const Navbar = ({ isOpen, setIsOpen }) => {
 
   const toggleOsrsModal = () => {
     setIsOsrsModalOpen(!isOsrsModalOpen);
+  };
+
+  const togglePokemonModal = () => {
+    setIsPokemonModalOpen(!isPokemonModalOpen);
   };
 
   return (
@@ -62,7 +67,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
               </button>
             </li>
             <li>
-              <button onClick={toggleOsrsModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+              <button onClick={togglePokemonModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <Cat size={20} className="mr-2" />Pokemon Cards
               </button>
             </li>
