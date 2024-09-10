@@ -58,7 +58,7 @@ const Projects = () => {
     {
       id: 4,
       title: 'Munchy',
-      description: `Munchy is a fun and interactive website that helps you stay healthy with useful tips and a supportive community. Built with ReactJS, it makes it easy to find health advice, set wellness goals, and connect with others who share your interests. It's all about making healthy living enjoyable and achievable. *still adjusting mobile responsiveness*`,
+      description: `Munchy is a fun and interactive website blog that I set up to store all of my workouts, calendars, and recipes, making it a go-to hub for health and wellness. Built with ReactJS, Munchy makes it easy to find useful health tips, set wellness goals, and connect with a supportive community. It’s all about making healthy living enjoyable and achievable, while helping me stay on track with my fitness journey.`,
       url: 'https://filtatarnik.github.io/Munchy_healthy_eating_app/',
       githubUrl: 'https://github.com/FilTatarnik/Munchy_healthy_eating_app',
     },
