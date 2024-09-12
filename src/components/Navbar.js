@@ -66,7 +66,6 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             <li>
               <Minus />
             </li>
-            <h2>Personal Tings</h2>
             <li>
               <button onClick={toggleOsrsModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <ChartColumnIncreasing size={20} className="mr-2" />Osrs Stats
