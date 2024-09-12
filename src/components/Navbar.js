@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { Home, User, Briefcase, Mail, Menu, X, ChartColumnIncreasing, Cat, Minus } from 'lucide-react';
+import { Home, User, Briefcase, Mail, Menu, X, ChartColumnIncreasing, Cat, Minus, BriefcaseBusiness } from 'lucide-react';
 import ContactFormModal from './ContactFormModal';  // Import the new component
 import OsrsStats from './OsrsStats';
 
@@ -54,6 +54,11 @@ const Navbar = ({ isOpen, setIsOpen }) => {
               </Link>
             </li>
             <li>
+              <Link to="#" smooth={true} duration={500} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+                <BriefcaseBusiness size={20} className="mr-2" />Wordpress Sites
+              </Link>
+            </li>
+            <li>
               <button onClick={toggleContactModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <Mail size={20} className="mr-2" />Contact
               </button>
@@ -61,6 +66,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             <li>
               <Minus />
             </li>
+            <h2>Personal Tings</h2>
             <li>
               <button onClick={toggleOsrsModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <ChartColumnIncreasing size={20} className="mr-2" />Osrs Stats
