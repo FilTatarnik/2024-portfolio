@@ -53,11 +53,11 @@ const Navbar = ({ isOpen, setIsOpen }) => {
                 <Briefcase size={20} className="mr-2" />Projects
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="#" smooth={true} duration={500} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <BriefcaseBusiness size={20} className="mr-2" />Wordpress Sites
               </Link>
-            </li>
+            </li> */}
             <li>
               <button onClick={toggleContactModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <Mail size={20} className="mr-2" />Contact
