@@ -27,11 +27,11 @@ const AboutUs = () => (
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Education</h3>
         <p className="text-gray-700">Finished General Assembly Chicago Full Stack Developer Bootcamp</p>
       </div>
-      <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      {/* <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">More</h3>
         <p className="text-gray-700"></p>
         <p className="text-gray-700"></p>
-      </div>
+      </div> */}
     </div>
   </section>
 );
