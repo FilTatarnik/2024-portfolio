@@ -69,6 +69,13 @@ const Projects = () => {
       url: 'https://filtatarnik.github.io/WindowWizInstallation/',
       githubUrl: 'https://github.com/FilTatarnik/WindowWizInstallation',
     },
+    {
+      id: 6,
+      title: 'Fils Flooring Inc',
+      description: 'Fils Flooring Inc is a responsive website for my personal flooring business, crafted with React and CSS3. It showcases our premium services and products, emphasizing quality and craftsmanship to potential customers. This project allowed me to apply advanced CSS techniques for responsive design, overcoming layout challenges across various devices. Currently a work in progress',
+      url: 'https://filtatarnik.github.io/Fils_flooring/',
+      githubUrl: 'https://github.com/FilTatarnik/Fils_flooring',
+    },
   ];
 
   return (
