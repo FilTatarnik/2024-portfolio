@@ -7,7 +7,7 @@ const AboutUs = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Background</h3>
-        <p className="text-gray-700">An enthusiastic web developer focused on crafting seamless, user-centered designs and robust, scalable solutions. After stepping away to support my family during an unexpected heart surgery, I'm now fully committed to resuming my programming career and driving impactful projects forward.</p>
+        <p className="text-gray-700">I'm a developer who likes building useful web apps that solve actual problems. Right now I run Fil's Flooring as the owner/operator, but I've kept coding and creating web solutions on the side. After getting my business established and taking some time to help family through a health situation, I'm looking to get more involved in software development. I bring both coding skills and real business experience to the table.</p>
       </div>
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Skills</h3>
@@ -21,7 +21,7 @@ const AboutUs = () => (
       </div>
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Experience</h3>
-        <p className="text-gray-700">Four years of programming experience and one year of freelance work in full-stack web development following a bootcamp, I specialize in building scalable, maintainable applications.</p>
+        <p className="text-gray-700">My background includes bootcamp training and hands-on experience building websites, plus running my own flooring business. Managing Fil's Flooring has taught me a ton about working with clients and managing projects, while I've kept growing my coding skills through development work. I'm good at figuring out what needs to be built and finding practical solutions, focusing on writing clean code that works.</p>
       </div>
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Education</h3>
