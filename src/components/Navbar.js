@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { Home, User, Briefcase, Mail, Menu, X, ChartColumnIncreasing, Cat, Minus, BriefcaseBusiness } from 'lucide-react';
+import { Home, User, Briefcase, Mail, Menu, X, ChartColumnIncreasing, Cat, Minus, BriefcaseBusiness, ArrowBigUp } from 'lucide-react';
 import ContactFormModal from './ContactFormModal';  // Import the new component
 import OsrsStats from './OsrsStats';
 
@@ -76,9 +76,18 @@ const Navbar = ({ isOpen, setIsOpen }) => {
                 <Cat size={20} className="mr-2" />Pokemon Cards
               </button>
             </li>
+            <li>
+              <p className="flex items-center text-gray-700 transition-colors">
+                <ArrowBigUp size={20} className="mr-2" />Work in Progress
+              </p>
+            </li>
           </ul>
         </div>
-        <div className="text-sm text-gray-500">FT</div>
+        <div className="text-sm text-gray-500">
+            <Link to="home" smooth={true} duration={500} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+              FT
+            </Link>
+        </div>
       </nav>
       <ContactFormModal isOpen={isContactModalOpen} onClose={toggleContactModal} />
       <OsrsStats isOpen={isOsrsModalOpen} onClose={toggleOsrsModal} />
