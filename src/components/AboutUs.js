@@ -17,6 +17,10 @@ const AboutUs = () => (
           <li>Node.js & Express</li>
           <li>Postgresql</li>
           <li>HTML5 & CSS3</li>
+          <li>Git & Version Control</li>
+          <li>Responsive Design</li>
+          <li>RESTful API's</li>
+          <li></li>
         </ul>
       </div>
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -25,7 +29,12 @@ const AboutUs = () => (
       </div>
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Education</h3>
-        <p className="text-gray-700">Finished General Assembly Chicago Full Stack Developer Bootcamp</p>
+        <p className="text-gray-700">
+          <h4>General Assembly Chicago Full Stack Developer Bootcamp.</h4>
+          <p>200+ hours of intensive hands-on training</p>
+          <p>Full-stack JavaScript development</p>
+          <p>Collaborated on team projects using modern frameworks.</p>
+        </p>
       </div>
       {/* <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">More</h3>
