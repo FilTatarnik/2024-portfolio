@@ -74,7 +74,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             </li>
             <li>
               <button onClick={togglePokemonModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
-                <Cat size={20} className="mr-2" />Pokemon Cards
+                <Cat size={20} className="mr-2" />Pokemon Cards I need
               </button>
             </li>
           </ul>
