@@ -76,6 +76,13 @@ const Projects = () => {
       url: 'https://filtatarnik.github.io/Fils_flooring/',
       githubUrl: 'https://github.com/FilTatarnik/Fils_flooring',
     },
+    {
+      id: 7,
+      title: 'Charm Dating App',
+      description: 'Charm is a modern dating application built with React.js, Node.js, Express.js, and PostgreSQL. It features real-time messaging, profile customization, and an intuitive matching system. Users can create detailed profiles, set preferences, and discover potential matches in their area. The app includes secure authentication, photo uploads, and a responsive design for seamless use across all devices. This full-stack project demonstrates implementation of complex user interactions, state management, and database relationships. Currently a work in progress. ',
+      url: 'https://private-user-images.githubusercontent.com/11740494/393968863-4f57f68c-76e1-4c31-988f-8769a5dcef5a.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM3NzExMDksIm5iZiI6MTczMzc3MDgwOSwicGF0aCI6Ii8xMTc0MDQ5NC8zOTM5Njg4NjMtNGY1N2Y2OGMtNzZlMS00YzMxLTk4OGYtODc2OWE1ZGNlZjVhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA5VDE5MDAwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJlYTFkYTkzMDgzYjQ1NjBmYjMzZmVkNmJjMTgwMjZiYjQ2ODQ3MTVmODA0Nzk2YjRhNGNiODJjZWE0NDA0NmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.PcXh8h8lGeS8VmVkOWR9LogEjvSNacmPM9OGJ-Lfu4U',
+      githubUrl: 'https://github.com/FilTatarnik/Dating_app_Charm',
+    },
   ];
 
   return (
