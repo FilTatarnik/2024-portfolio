@@ -49,12 +49,12 @@ const Projects = () => {
       githubUrl: 'https://github.com/FilTatarnik/PokeDex_Reloaded',
     },
     {
-      id: 3,
-      title: 'Charm',
-      description: 'Charm is a full-stack web app built with ReactJS, NodeJS, ExpressJS, and PostgreSQL. It lets users create profiles and discover matches nearby. Currently a work in progress.',
-      url: '',
-      githubUrl: 'https://github.com/FilTatarnik/Dating_app_Charm',
-    },
+        id: 3,
+        title: 'Charm Dating App',
+        description: 'Charm is a modern dating application built with React.js, Node.js, Express.js, and PostgreSQL. It features real-time messaging, profile customization, and an intuitive matching system. Users can create detailed profiles, set preferences, and discover potential matches in their area. The app includes secure authentication, photo uploads, and a responsive design for seamless use across all devices. This full-stack project demonstrates implementation of complex user interactions, state management, and database relationships. Currently a work in progress. ',
+        url: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3p2ZDl3d3Q2d3pwN3VlZGJudTByN2VlaWk2OGI0bXhtN2NyNGpxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4u3aZ184UsR6Z4Jz4w/giphy.gif',
+        githubUrl: 'https://github.com/FilTatarnik/Dating_app_Charm',
+      },
     {
       id: 4,
       title: 'Munchy',
@@ -75,13 +75,6 @@ const Projects = () => {
       description: 'Fils Flooring Inc is a responsive website for my personal flooring business, crafted with React and CSS3. It showcases our premium services and products, emphasizing quality and craftsmanship to potential customers. This project allowed me to apply advanced CSS techniques for responsive design, overcoming layout challenges across various devices. Currently a work in progress',
       url: 'https://filtatarnik.github.io/Fils_flooring/',
       githubUrl: 'https://github.com/FilTatarnik/Fils_flooring',
-    },
-    {
-      id: 7,
-      title: 'Charm Dating App',
-      description: 'Charm is a modern dating application built with React.js, Node.js, Express.js, and PostgreSQL. It features real-time messaging, profile customization, and an intuitive matching system. Users can create detailed profiles, set preferences, and discover potential matches in their area. The app includes secure authentication, photo uploads, and a responsive design for seamless use across all devices. This full-stack project demonstrates implementation of complex user interactions, state management, and database relationships. Currently a work in progress. ',
-      url: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3p2ZDl3d3Q2d3pwN3VlZGJudTByN2VlaWk2OGI0bXhtN2NyNGpxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4u3aZ184UsR6Z4Jz4w/giphy.gif',
-      githubUrl: 'https://github.com/FilTatarnik/Dating_app_Charm',
     },
   ];
 
