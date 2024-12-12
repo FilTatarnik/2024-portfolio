@@ -8,7 +8,7 @@ const skillNames = [
 
 const OsrsStats = ({ isOpen, onClose }) => {
   const [stats, setStats] = useState([]);
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState('Daaammmnnn');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 

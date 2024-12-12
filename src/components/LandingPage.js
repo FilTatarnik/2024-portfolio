@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 const LandingPage = () => (
-  <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-blue-700 text-white p-4 md:p-8 w-full">
+  <section id="home" className="min-h-screen flex items-center justify-center bg-blue-800  text-white p-4 md:p-8 w-full">
     <div className="text-center max-w-xl mx-auto">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 animate-fade-in-down">Filip Tatarnik</h1>
       <p className="text-lg md:text-xl lg:text-2xl mb-8 animate-fade-in-up">Let's get some work done</p>
