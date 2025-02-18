@@ -9,6 +9,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isOsrsModalOpen, setIsOsrsModalOpen] = useState(false);
   const [isPokemonModalOpen, setIsPokemonModalOpen] = useState(false);
+  const [isCodeSandboxModalOpen, setIsCodeSandboxModalOpen] = useState(false);
 
   const toggleContactModal = () => {
     setIsContactModalOpen(!isContactModalOpen);
@@ -20,6 +21,10 @@ const Navbar = ({ isOpen, setIsOpen }) => {
 
   const togglePokemonModal = () => {
     setIsPokemonModalOpen(!isPokemonModalOpen);
+  };
+
+  const toggleCodeSandbox = () => {
+    setIsCodeSandboxModalOpen(!isCodeSandboxModalOpen);
   };
 
   return (
@@ -54,11 +59,6 @@ const Navbar = ({ isOpen, setIsOpen }) => {
                 <Briefcase size={20} className="mr-2" />Projects
               </Link>
             </li>
-            {/* <li>
-              <Link to="#" smooth={true} duration={500} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
-                <BriefcaseBusiness size={20} className="mr-2" />Wordpress Sites
-              </Link>
-            </li> */}
             <li>
               <button onClick={toggleContactModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <Mail size={20} className="mr-2" />Contact
@@ -79,6 +79,11 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             </li>
             <li>
               {/* <img src="https://ghchart.rshah.org/FilTatarnik" alt="GitHub Contributions" class="contribution-chart" /> */}
+            </li>
+            <li>
+              <button onClick={toggleCodeSandbox} classname="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+                <Cat size={20} className='mr-2'/>Code Sandbox
+              </button>
             </li>
           </ul>
         </div>

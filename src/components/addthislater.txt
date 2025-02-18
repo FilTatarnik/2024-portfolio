@@ -1,0 +1,25 @@
+Here’s the updated version incorporating your focus on core building blocks:
+
+---
+
+### Background  
+I’m Filip Tatarnik—a passionate web developer dedicated to creating intuitive, user-focused applications. Over the past four years, I’ve sharpened my skills in **React.js**, **Node.js**, and **PostgreSQL**, building projects like **LeashPals** and **Munchy** that solve real-world problems with scalable, clean code.  
+
+---
+
+### Goals  
+I’m focused on mastering the **core building blocks of software engineering**—data structures, algorithms, and system architecture. I want to understand how programs work under the hood, from **memory management** to **concurrency**, and apply these principles to write solid, performant code in any language. My goal is to level up from simply making things work to deeply understanding **why** and **how** they work, building a foundation that can support growth in any technical direction.  
+
+---
+
+### Interests  
+Outside of coding, I’m all about creativity—whether I’m experimenting with **digital art** or diving into immersive games like **Old School RuneScape**. These hobbies often inspire my projects, from playful interfaces to designs influenced by worlds like **Pokémon** and **Katamari Damacy**.  
+
+---
+
+### Career Objective  
+I’m seeking a **junior developer role** to gain hands-on experience, collaborate with a team, and bring my passion for clean code and great design to meaningful projects. I’m ready to learn, grow, and make a positive impact in the tech world.  
+
+---
+
+This should perfectly capture your focus and aspirations! How does it feel now?

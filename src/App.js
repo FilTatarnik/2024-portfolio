@@ -5,19 +5,21 @@ import LandingPage from './components/LandingPage';
 import AboutUs from './components/AboutUs';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
-import { SnowOverlay } from 'react-snow-overlay';
+import CodeSandboxModal from './components/CodeSandboxModal';
+// import { SnowOverlay } from 'react-snow-overlay';
 
 function App() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   return (
     <div className="flex flex-col min-h-screen">
-          <SnowOverlay />
+          {/* <SnowOverlay /> */}
 
       <Navbar isOpen={isNavbarOpen} setIsOpen={setIsNavbarOpen} />
       <div className="flex-grow pl-0 md:pl-64"> {/* Main content wrapper */}
         <main className="flex-grow">
           <LandingPage />
+          {/* <CodeSandboxModal /> */}
           <AboutUs />
           <Hero />
         </main>
