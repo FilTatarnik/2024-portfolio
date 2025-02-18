@@ -7,15 +7,7 @@ const AboutUs = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Background</h3>
-        <p className="text-gray-700">Hi, I’m Filip Tatarnik—a passionate web developer with a strong foundation in creating intuitive, user-focused applications. Over the past four years, I’ve honed my skills in React.js, Node.js, and PostgreSQL, building projects like LeashPals and Munchy that solve real-world problems with clean, scalable code.
-
-I’m always eager to learn and grow, with a focus on expanding my technical expertise and tackling new challenges in software development. My next goal is to explore mobile app development with tools like React Native, blending my web development experience with cross-platform solutions. I’m also interested in strengthening my overall understanding of programming principles to stay adaptable and ready for diverse projects.
-
-When I’m not coding, you’ll find me exploring creative outlets like digital art or diving into immersive games like Old School RuneScape. I’m always looking for ways to bring these passions into my work, whether it’s designing playful interfaces or drawing inspiration from the worlds I love, like Pokémon and Katamari Damacy.
-
-Looking ahead, I’m seeking a junior developer role to gain hands-on experience, collaborate with a team, and bring my enthusiasm for clean code and great design to meaningful projects. I’m ready to work hard, learn from seasoned professionals, and make a positive impact in the industry.
-
-Let’s connect and build something amazing together!</p>
+        <p className="text-gray-700">I'm Filip Tatarnik, a web developer with four years of experience in building user-focused applications using React.js, Node.js, and PostgreSQL. I'm eager to expand my skills into mobile app development with React Native and deepen my understanding of programming fundamentals. I’m seeking a junior developer role where I can collaborate, learn from experienced professionals, and make a positive impact. When I’m not coding, I enjoy a variety of activities, including gaming (Dragon Ball, Yu-Gi-Oh, Pokémon, Final Fantasy), snowboarding, music making, home automation, mechanical keyboards, and more. I’m also passionate about cooking, flooring, building PCs for friends, and exploring the world of audiophile equipment. Let’s build something together!</p>
       </div>
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Skills</h3>
