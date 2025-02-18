@@ -81,9 +81,9 @@ const Navbar = ({ isOpen, setIsOpen }) => {
               {/* <img src="https://ghchart.rshah.org/FilTatarnik" alt="GitHub Contributions" class="contribution-chart" /> */}
             </li>
             <li>
-              <button onClick={toggleCodeSandbox} classname="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+              {/* <button onClick={toggleCodeSandbox} classname="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <Cat size={20} className='mr-2'/>Code Sandbox
-              </button>
+              </button> */}
             </li>
           </ul>
         </div>
