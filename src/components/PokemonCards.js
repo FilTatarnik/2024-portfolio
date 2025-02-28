@@ -3,7 +3,7 @@ import PokemonDetailModal from './PokemonDetailModal';
 
 const PokemonCards = ({ isOpen, onClose }) => {
   const [allCards, setAllCards] = useState([]); 
-  const [ownedCards, setOwnedCards] = useState([9, 18, 26, 31, 34, 35, 36, 38, 40, 45, 62, 65, 68, 71, 82, 89, 94, 97, 101, 106, 107, 110, 112, 113, 115, 116, 117, 122, 123, 127, 130, 131, 132, 135, 136, 141, 142, 143, 144, 145, 146, 149, 150, 151]);
+  const [ownedCards, setOwnedCards] = useState([3, 9, 18, 26, 31, 34, 36, 38, 40, 45, 62, 65, 68, 71, 82, 89, 94, 97, 101, 106, 107, 110, 112, 113, 115, 117, 122, 123, 127, 130, 131, 132, 135, 136, 141, 142, 143, 144, 145, 146, 149, 150, 151]);
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
 
