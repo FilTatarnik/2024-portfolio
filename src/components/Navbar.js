@@ -77,6 +77,11 @@ const Navbar = ({ isOpen, setIsOpen }) => {
                 <Cat size={20} className="mr-2" />Pokemon Cards I Need
               </button>
             </li>
+            {/* <li>
+              <button onClick={togglePokemonModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
+                <Cat size={20} className="mr-2" />DragonBall Books I Need
+              </button>
+            </li> */}
             <li>
               {/* <img src="https://ghchart.rshah.org/FilTatarnik" alt="GitHub Contributions" class="contribution-chart" /> */}
             </li>
