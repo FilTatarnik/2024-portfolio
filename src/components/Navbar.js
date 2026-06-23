@@ -12,16 +12,19 @@ import {
   Minus,
   BriefcaseBusiness,
   ArrowBigUp,
+  CircleDollarSign,
 } from "lucide-react";
 import ContactFormModal from "./ContactFormModal"; // Import the new component
 import OsrsStats from "./OsrsStats";
 import PokemonCards from "./PokemonCards";
+import TradingViewWidget from "./TradingViewWidget";
 
 const Navbar = ({ isOpen, setIsOpen }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isOsrsModalOpen, setIsOsrsModalOpen] = useState(false);
   const [isPokemonModalOpen, setIsPokemonModalOpen] = useState(false);
   const [isCodeSandboxModalOpen, setIsCodeSandboxModalOpen] = useState(false);
+  const [isStocksModalOpen, setIsStocksModalOpen] = useState(false);
 
   const toggleContactModal = () => {
     setIsContactModalOpen(!isContactModalOpen);
@@ -37,6 +40,10 @@ const Navbar = ({ isOpen, setIsOpen }) => {
 
   const toggleCodeSandbox = () => {
     setIsCodeSandboxModalOpen(!isCodeSandboxModalOpen);
+  };
+
+  const toggleStocksModal = () => {
+    setIsStocksModalOpen(!isStocksModalOpen);
   };
 
   return (
@@ -112,6 +119,15 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             </li>
             <li>
               <button
+                onClick={toggleStocksModal}
+                className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors"
+              >
+                <CircleDollarSign size={20} className="mr-2" />
+                Stocks
+              </button>
+            </li>
+            <li>
+              <button
                 onClick={toggleOsrsModal}
                 className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors"
               >
@@ -160,6 +176,10 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       />
       <PokemonCards isOpen={isPokemonModalOpen} onClose={togglePokemonModal} />
       <OsrsStats isOpen={isOsrsModalOpen} onClose={toggleOsrsModal} />
+      <TradingViewWidget
+        isOpen={isStocksModalOpen}
+        onClose={toggleStocksModal}
+      />
     </>
   );
 };
