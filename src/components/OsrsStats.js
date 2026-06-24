@@ -92,7 +92,7 @@ const OsrsStats = ({ isOpen, onClose }) => {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             className="px-3 py-2 bg-gray-800 text-white rounded-l-md focus:outline-none"
-            placeholder="Enter username"
+            placeholder="Daaammmnnn"
           />
           {/* Submit button */}
           <button

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 
 const Projects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -8,13 +8,13 @@ const Projects = () => {
   const openModal = (project) => {
     setCurrentProject(project);
     setIsModalOpen(true);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   };
 
   const closeModal = () => {
     setCurrentProject(null);
     setIsModalOpen(false);
-    document.body.style.overflow = 'unset';
+    document.body.style.overflow = "unset";
   };
 
   useEffect(() => {
@@ -25,69 +25,86 @@ const Projects = () => {
     };
 
     if (isModalOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isModalOpen]);
 
   const projects = [
     {
       id: 1,
-      title: 'LeashPals',
-      description: 'LeashPals is a web app built with React.js, Node.js, Express.js, and PostgreSQL. Users can register as either a Dog Owner or a Walker. Owners can add dogs and schedule walks, while Walkers can accept and complete these walk requests. The app simplifies connecting Owners with reliable Walkers. Currently a work in progress.',
-      url: '',
-      githubUrl: 'https://github.com/FilTatarnik/Leashpals_back_nodejs',
+      title: "LeashPals",
+      description:
+        "LeashPals is a web app built with React.js, Node.js, Express.js, and PostgreSQL. Users can register as either a Dog Owner or a Walker. Owners can add dogs and schedule walks, while Walkers can accept and complete these walk requests. The app simplifies connecting Owners with reliable Walkers. Currently a work in progress.",
+      url: "",
+      githubUrl: "https://github.com/FilTatarnik/Leashpals_back_nodejs",
     },
     {
       id: 2,
-      title: 'PokeDex Reloaded',
-      description: 'PokeDex Reloaded is a web app that lets users quickly find any Pokémon\'s color palette with a simple search. Built with ReactJS and NodeJS, it offers an intuitive and efficient way to explore Pokémon colors.',
-      url: 'https://filtatarnik.github.io/PokeDex_Reloaded/',
-      githubUrl: 'https://github.com/FilTatarnik/PokeDex_Reloaded',
+      title: "PokeDex Reloaded",
+      description:
+        "PokeDex Reloaded is a web app that lets users quickly find any Pokémon's color palette with a simple search. Built with ReactJS and NodeJS, it offers an intuitive and efficient way to explore Pokémon colors.",
+      url: "https://filtatarnik.github.io/PokeDex_Reloaded/",
+      githubUrl: "https://github.com/FilTatarnik/PokeDex_Reloaded",
     },
     {
-        id: 3,
-        title: 'Charm Dating App',
-        description: 'Charm is a modern dating application built with React.js, Node.js, Express.js, and PostgreSQL. It features real-time messaging, profile customization, and an intuitive matching system. Users can create detailed profiles, set preferences, and discover potential matches in their area. The app includes secure authentication, photo uploads, and a responsive design for seamless use across all devices. This full-stack project demonstrates implementation of complex user interactions, state management, and database relationships. Currently a work in progress. ',
-        url: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3p2ZDl3d3Q2d3pwN3VlZGJudTByN2VlaWk2OGI0bXhtN2NyNGpxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4u3aZ184UsR6Z4Jz4w/giphy.gif',
-        githubUrl: 'https://github.com/FilTatarnik/Dating_app_Charm',
-      },
+      id: 3,
+      title: "Charm Dating App",
+      description:
+        "Charm is a modern dating application built with React.js, Node.js, Express.js, and PostgreSQL. It features real-time messaging, profile customization, and an intuitive matching system. Users can create detailed profiles, set preferences, and discover potential matches in their area. The app includes secure authentication, photo uploads, and a responsive design for seamless use across all devices. This full-stack project demonstrates implementation of complex user interactions, state management, and database relationships. Currently a work in progress. ",
+      url: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3p2ZDl3d3Q2d3pwN3VlZGJudTByN2VlaWk2OGI0bXhtN2NyNGpxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4u3aZ184UsR6Z4Jz4w/giphy.gif",
+      githubUrl: "https://github.com/FilTatarnik/Dating_app_Charm",
+    },
     {
       id: 4,
-      title: 'Munchy',
+      title: "Munchy",
       description: `Munchy is a fun and interactive website blog that I set up to store all of my workouts, calendars, and recipes, making it a go-to hub for health and wellness. Built with ReactJS, Munchy makes it easy to find useful health tips, set wellness goals, and connect with a supportive community. It’s all about making healthy living enjoyable and achievable, while helping me stay on track with my fitness journey.`,
-      url: 'https://filtatarnik.github.io/Munchy_healthy_eating_app/',
-      githubUrl: 'https://github.com/FilTatarnik/Munchy_healthy_eating_app',
+      url: "https://filtatarnik.github.io/Munchy_healthy_eating_app/",
+      githubUrl: "https://github.com/FilTatarnik/Munchy_healthy_eating_app",
     },
     {
       id: 5,
-      title: 'Window Wiz Installation',
+      title: "Window Wiz Installation",
       description: `Window Wiz Installation is a mock website for a window installation company, built with React. It highlights services, customer testimonials, and a contact form, simulating a real business's online presence. `,
-      url: 'https://filtatarnik.github.io/WindowWizInstallation/',
-      githubUrl: 'https://github.com/FilTatarnik/WindowWizInstallation',
+      url: "https://filtatarnik.github.io/WindowWizInstallation/",
+      githubUrl: "https://github.com/FilTatarnik/WindowWizInstallation",
     },
     {
       id: 6,
-      title: 'Fils Flooring Inc',
-      description: 'Fils Flooring Inc is a responsive website for my personal flooring business, crafted with React and CSS3. It showcases our premium services and products, emphasizing quality and craftsmanship to potential customers. This project allowed me to apply advanced CSS techniques for responsive design, overcoming layout challenges across various devices. Currently a work in progress',
-      url: 'https://filtatarnik.github.io/Fils_flooring/',
-      githubUrl: 'https://github.com/FilTatarnik/Fils_flooring',
+      title: "Fils Flooring Inc",
+      description:
+        "Fils Flooring Inc is a responsive website for my personal flooring business, crafted with React and CSS3. It showcases our premium services and products, emphasizing quality and craftsmanship to potential customers. This project allowed me to apply advanced CSS techniques for responsive design, overcoming layout challenges across various devices. Currently a work in progress",
+      url: "https://filtatarnik.github.io/Fils_flooring/",
+      githubUrl: "https://github.com/FilTatarnik/Fils_flooring",
     },
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex flex-col justify-center bg-gray-900 p-4 sm:p-6 md:p-8 lg:p-12 md:left-64">
+    <section
+      id="projects"
+      className="min-h-screen flex flex-col justify-center bg-gray-900 p-4 sm:p-6 md:p-8 lg:p-12 md:left-64"
+    >
       <div className="flex flex-col items-center w-full max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center text-white">My Projects</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center text-white">
+          My Projects
+        </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl">
           {projects.map((project) => (
-            <div key={project.id} className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-bold mb-4 text-blue-400">{project.title}</h3>
+            <div
+              key={project.id}
+              className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">
+                {project.title}
+              </h3>
               <p className="text-gray-300 mb-4">{project.description}</p>
-              <button onClick={() => openModal(project)} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button
+                onClick={() => openModal(project)}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
                 View Project Details
               </button>
             </div>
@@ -97,23 +114,43 @@ const Projects = () => {
 
       {isModalOpen && currentProject && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 overflow-y-auto">
-          <div ref={modalRef} className="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto">
+          <div
+            ref={modalRef}
+            className="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto"
+          >
             <h3 className="text-2xl font-bold mb-4">{currentProject.title}</h3>
             <p className="text-gray-700 mb-4">{currentProject.description}</p>
             <div className="flex flex-wrap gap-4 mb-4">
               {currentProject.url && (
-                <a href={currentProject.url} target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <a
+                  href={currentProject.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >
                   Visit Site
                 </a>
               )}
               {currentProject.githubUrl && (
-                <a href={currentProject.githubUrl} target="_blank" rel="noopener noreferrer" className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">
+                <a
+                  href={currentProject.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded"
+                >
                   View Code
                 </a>
               )}
             </div>
             {currentProject.url && (
-              <div className="mt-4 mb-4 overflow-hidden" style={{ paddingBottom: '56.25%', position: 'relative', height: 0 }}>
+              <div
+                className="mt-4 mb-4 overflow-hidden"
+                style={{
+                  paddingBottom: "56.25%",
+                  position: "relative",
+                  height: 0,
+                }}
+              >
                 <iframe
                   src={currentProject.url}
                   title="Project Preview"
@@ -122,7 +159,10 @@ const Projects = () => {
                 ></iframe>
               </div>
             )}
-            <button onClick={closeModal} className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">
+            <button
+              onClick={closeModal}
+              className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
+            >
               Close
             </button>
           </div>
