@@ -14,12 +14,14 @@ import {
   // ArrowBigUp,
   CircleDollarSign,
   Leaf,
+  Zap,
 } from "lucide-react";
 import ContactFormModal from "./ContactFormModal"; // Import the new component
 import OsrsStats from "./OsrsStats";
 import PokemonCards from "./PokemonCards";
 import TradingViewWidget from "./TradingViewWidget";
 import StrainList from "./StrainList";
+import WhosThatPokemon from "./WhosThatPokemon";
 
 const Navbar = ({ isOpen, setIsOpen }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -28,6 +30,8 @@ const Navbar = ({ isOpen, setIsOpen }) => {
   // const [isCodeSandboxModalOpen, setIsCodeSandboxModalOpen] = useState(false);
   const [isStocksModalOpen, setIsStocksModalOpen] = useState(false);
   const [isStrainModalOpen, setIsStrainModalOpen] = useState(false);
+  const [isWhosThatPokemonModalOpen, setIsWhosThatPokemonModalOpen] =
+    useState(false);
 
   const toggleContactModal = () => {
     setIsContactModalOpen(!isContactModalOpen);
@@ -51,6 +55,10 @@ const Navbar = ({ isOpen, setIsOpen }) => {
 
   const toggleStrainModal = () => {
     setIsStrainModalOpen(!isStrainModalOpen);
+  };
+
+  const toggleWhosThatPokemonModal = () => {
+    setIsWhosThatPokemonModalOpen(!isWhosThatPokemonModalOpen);
   };
 
   return (
@@ -160,6 +168,15 @@ const Navbar = ({ isOpen, setIsOpen }) => {
                 Pokemon Cards I Need
               </button>
             </li>
+            <li>
+              <button
+                onClick={toggleWhosThatPokemonModal}
+                className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors"
+              >
+                <Zap size={20} className="mr-2" />
+                Who's That Pokemon
+              </button>
+            </li>
             {/* <li>
               <button onClick={togglePokemonModal} className="flex items-center text-gray-700 hover:text-blue-600 cursor-pointer transition-colors">
                 <Cat size={20} className="mr-2" />DragonBall Books I Need
@@ -197,6 +214,10 @@ const Navbar = ({ isOpen, setIsOpen }) => {
         onClose={toggleStocksModal}
       />
       <StrainList isOpen={isStrainModalOpen} onClose={toggleStrainModal} />
+      <WhosThatPokemon
+        isOpen={isWhosThatPokemonModalOpen}
+        onClose={toggleWhosThatPokemonModal}
+      />
     </>
   );
 };
