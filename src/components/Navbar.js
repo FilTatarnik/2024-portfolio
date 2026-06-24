@@ -9,7 +9,7 @@ import {
   X,
   ChartColumnIncreasing,
   Cat,
-  Minus,
+  // Minus,
   // BriefcaseBusiness,
   // ArrowBigUp,
   CircleDollarSign,
@@ -130,7 +130,9 @@ const Navbar = ({ isOpen, setIsOpen }) => {
               </button>
             </li>
             <li>
-              <Minus />
+              <ul className="text-xs text-gray-400 uppercase tracking-widest">
+                Fun Stuff
+              </ul>
             </li>
             <li>
               <button
