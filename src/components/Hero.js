@@ -47,7 +47,8 @@ const Projects = () => {
       title: "PokeDex Reloaded",
       description:
         "PokeDex Reloaded is a web app that lets users quickly find any Pokémon's color palette with a simple search. Built with ReactJS and NodeJS, it offers an intuitive and efficient way to explore Pokémon colors.",
-      url: "https://filtatarnik.github.io/PokeDex_Reloaded/",
+      url: "",
+      visitUrl: "https://filtatarnik.github.io/PokeDex_Reloaded/",
       githubUrl: "https://github.com/FilTatarnik/PokeDex_Reloaded",
     },
     {
@@ -121,9 +122,9 @@ const Projects = () => {
             <h3 className="text-2xl font-bold mb-4">{currentProject.title}</h3>
             <p className="text-gray-700 mb-4">{currentProject.description}</p>
             <div className="flex flex-wrap gap-4 mb-4">
-              {currentProject.url && (
+              {(currentProject.visitUrl || currentProject.url) && (
                 <a
-                  href={currentProject.url}
+                  href={currentProject.visitUrl || currentProject.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"

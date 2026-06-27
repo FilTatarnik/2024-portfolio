@@ -64,12 +64,15 @@ const AboutUs = () => (
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Experience</h3>
         <p className="text-gray-700">
-          My background combines formal immersive training with years of
-          practical application development and independent business management.
-          Running Fil's Flooring taught me how to manage complex project
-          timelines, scope client requirements, and deliver on expectations. I
-          bring that same owner-operator mindset to engineering, clear
-          communication, practical solutions, and code that works.
+          My background combines formal training with years of building real
+          projects and running my own business. I've shipped a dog walking
+          marketplace (LeashPals), a dating app (Charm), a Pokémon card tracker,
+          an OSRS stats viewer, a multiplayer Who's That Pokémon game powered by
+          Firebase, a strain lookup tool, and a stock watchlist dashboard, all
+          built and deployed on my own. Running Fil's Flooring taught me how to
+          manage timelines, work with clients, and deliver. I bring that same
+          owner-operator mindset to engineering — clear communication, practical
+          solutions
         </p>
       </div>
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
