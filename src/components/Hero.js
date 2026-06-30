@@ -55,8 +55,8 @@ const Projects = () => {
       id: 3,
       title: "Charm Dating App",
       description:
-        "Charm is a modern dating application built with React.js, Node.js, Express.js, and PostgreSQL. It features real-time messaging, profile customization, and an intuitive matching system. Users can create detailed profiles, set preferences, and discover potential matches in their area. The app includes secure authentication, photo uploads, and a responsive design for seamless use across all devices. This full-stack project demonstrates implementation of complex user interactions, state management, and database relationships. Currently a work in progress. ",
-      url: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3p2ZDl3d3Q2d3pwN3VlZGJudTByN2VlaWk2OGI0bXhtN2NyNGpxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4u3aZ184UsR6Z4Jz4w/giphy.gif",
+        "Charm is a modern dating application built with React.js, Node.js, Express.js, and PostgreSQL. It features real-time messaging, profile customization, and an intuitive matching system. Users can create detailed profiles, set preferences, and discover potential matches. The app includes secure authentication, photo uploads, and a responsive design for seamless use across all devices. This full-stack project demonstrates implementation of complex user interactions, state management, and database relationships. Currently a work in progress. ",
+      url: "",
       githubUrl: "https://github.com/FilTatarnik/Dating_app_Charm",
     },
     {
@@ -146,16 +146,12 @@ const Projects = () => {
             {currentProject.url && (
               <div
                 className="mt-4 mb-4 overflow-hidden"
-                style={{
-                  paddingBottom: "56.25%",
-                  position: "relative",
-                  height: 0,
-                }}
+                style={{ height: "500px" }}
               >
                 <iframe
                   src={currentProject.url}
                   title="Project Preview"
-                  className="absolute top-0 left-0 w-full h-full border-0"
+                  className="w-full h-full border-0"
                   sandbox="allow-scripts allow-same-origin"
                 ></iframe>
               </div>

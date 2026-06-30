@@ -64,15 +64,12 @@ const AboutUs = () => (
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <h3 className="text-2xl font-bold mb-4 text-blue-700">Experience</h3>
         <p className="text-gray-700">
-          My background combines formal training with years of building real
-          projects and running my own business. I've shipped a dog walking
-          marketplace (LeashPals), a dating app (Charm), a Pokémon card tracker,
-          an OSRS stats viewer, a multiplayer Who's That Pokémon game powered by
-          Firebase, a strain lookup tool, and a stock watchlist dashboard, all
-          built and deployed on my own. Running Fil's Flooring taught me how to
-          manage timelines, work with clients, and deliver. I bring that same
-          owner-operator mindset to engineering — clear communication, practical
-          solutions
+          My background is years of building real projects and running my own
+          business. I've shipped a dog walking marketplace (LeashPals), a dating
+          app (Charm), a Pokémon card tracker, an OSRS stats viewer, a
+          multiplayer Who's That Pokémon game powered by Firebase, a strain
+          lookup tool, and a stock watchlist dashboard, all built and deployed
+          on my own.
         </p>
       </div>
       <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -84,14 +81,11 @@ const AboutUs = () => (
           <p className="font-medium mb-3">Full Stack Developer Bootcamp</p>
           <ul className="space-y-2 list-none">
             <li>
-              ✓ Completed 200+ hours of intensive, hands-on technical training
-            </li>
-            <li>
-              ✓ Focused on full-stack JavaScript development and modern
+              Focused on full-stack JavaScript development and modern
               engineering frameworks
             </li>
             <li>
-              ✓ Collaborated in sprint teams to build, test, and deploy web
+              Collaborated in sprint teams to build, test, and deploy web
               applications
             </li>
           </ul>
